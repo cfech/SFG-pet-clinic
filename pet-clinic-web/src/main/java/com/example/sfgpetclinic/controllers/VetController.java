@@ -4,12 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class VetIndexController {
+public class VetController {
 
     @RequestMapping("/vet")
     public String vetIndex(){
 
-        return "VetIndex";
+        return "vets/vetList";
     }
 
 }
