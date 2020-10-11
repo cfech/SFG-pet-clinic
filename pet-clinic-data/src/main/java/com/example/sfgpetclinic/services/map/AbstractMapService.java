@@ -1,12 +1,11 @@
 package com.example.sfgpetclinic.services.map;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import com.example.sfgpetclinic.model.BaseEntity;
 
-public abstract class AbstractMapService<T, ID> {
-    protected Map<ID, T> map = new HashMap<>();
+import java.util.*;
+
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
+    protected Map<Long, T> map = new HashMap<>();
 
     Set<T> findAll() {
         return new HashSet<>(map.values());
@@ -16,8 +15,18 @@ public abstract class AbstractMapService<T, ID> {
        return map.get(id);
     }
 
-    T save(ID id,T object){
-        map.put(id, object);
+    T save(T object){
+
+        if(object != null){
+            if(object.getId() == null){
+                object.setId(getNextId());
+            }
+
+            map.put(object.getId(), object);
+        }else{
+            //will not work if we try to pass a null object in here
+            throw new RuntimeException("Object cannot be null");
+        }
         return object;
     }
 
@@ -30,6 +39,25 @@ public abstract class AbstractMapService<T, ID> {
         map.entrySet().removeIf(entry -> entry.getValue().equals(object));
     }
 
+    //returns the max id in our array(list) + adds one
+    private Long getNextId(){
+
+        //His Solution
+//        Long nextId = null;
+//
+//        //if there is nothing in the list yet retrun 1
+//        try{
+//            nextId = Collections.max(map.keySet()) +1;
+//        }catch (NoSuchElementException e){
+//            nextId = 1L;
+//        }
+
+
+        //random Id solution
+
+        long newId = 10000 + (long)  (Math.random() * 89999);
+        return newId;
+    }
 
 }
 
