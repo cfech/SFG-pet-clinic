@@ -7,5 +7,23 @@
 <body>
 <h1 th:text="'List of vets'" >List of Vets...</h1>
 
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--    question mark is a 'null safe operator' that would take effect if we has an owner that was null and avoid an exception, not needed here, just an example -->
+    <tr th:each = "vet : ${vets}" >
+        <td  th:text = "${vet?.id}">1</td>
+        <td  th:text = "${vet?.firstName}">John</td>
+        <td  th:text = "${vet?.lastName}">Doe</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
