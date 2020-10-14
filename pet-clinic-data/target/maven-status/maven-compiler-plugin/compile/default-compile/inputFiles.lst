@@ -1,5 +1,14 @@
-/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/Person.java
-/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/PetType.java
-/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/Owner.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/OwnerService.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/map/VetServiceMap.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/PetService.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/VetService.java
 /Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/Pet.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/map/PetServiceMap.java
 /Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/Vet.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/Person.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/BaseEntity.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/map/AbstractMapService.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/PetType.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/map/OwnerServiceMap.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/model/Owner.java
+/Users/connor/Desktop/code/udemy/SpringCourse/SFG-pet-clinic/pet-clinic-data/src/main/java/com/example/sfgpetclinic/services/CrudService.java
