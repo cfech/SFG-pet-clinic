@@ -3,7 +3,7 @@ package com.example.sfgpetclinic.model;
 import java.io.Serializable;
 
 public class BaseEntity implements Serializable {
-    //use box type over primitive , recomendation of hibernate
+    //use box type over primitive , recommendation of hibernate
     private Long id;
 
 
