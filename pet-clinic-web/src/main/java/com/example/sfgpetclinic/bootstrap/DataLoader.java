@@ -1,6 +1,7 @@
 package com.example.sfgpetclinic.bootstrap;
 
 import com.example.sfgpetclinic.model.Owner;
+import com.example.sfgpetclinic.model.Pet;
 import com.example.sfgpetclinic.model.PetType;
 import com.example.sfgpetclinic.model.Vet;
 import com.example.sfgpetclinic.services.OwnerService;
@@ -9,6 +10,8 @@ import com.example.sfgpetclinic.services.VetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 //this class starts the app up with some data, commandlinerunner is a spring boot
 // specific way of intialiaing an app with data
@@ -45,12 +48,33 @@ public class DataLoader implements CommandLineRunner {
         Owner tim = new Owner();
         tim.setFirstName("Tim");
         tim.setLastName("Higgins");
+        tim.setAddress("123 Random Street");
+        tim.setCity("New York");
+        tim.setTelephone("9021387465");
+
+        Pet timsPet = new Pet();
+        timsPet.setPetType(savedDogPetType);
+        timsPet.setOwner(tim);
+        timsPet.setBirthDate(LocalDate.now());
+        timsPet.setName("Rosco");
+        tim.getPets().add(timsPet);
 
         ownerService.save(tim);
 
         Owner tom = new Owner();
         tom.setFirstName("Tom");
         tom.setLastName("Jeffries");
+        tom.setAddress("125 Random Street");
+        tom.setCity("New York");
+        tom.setTelephone("385629473");
+
+        Pet tomsPet = new Pet();
+        tomsPet.setPetType(savedCatPetType);
+        tomsPet.setOwner(tom);
+        tomsPet.setBirthDate(LocalDate.now());
+        tomsPet.setName("Mittins");
+        tom.getPets().add(tomsPet);
+
 
         ownerService.save(tom);
 
